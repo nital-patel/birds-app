@@ -2,20 +2,28 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const path = require('path');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+
+app.get('/', function(req,res){
+  res.send('HELLOoOOOoOOoOOOooO');
+});
+
 
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'));
 
-app.get('/', function (req, res) {
-    res.render('index');
-})
-
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+
+
+
+
 app.use(require('./routes/birds.js'));
+
+
+
 
 
 app.listen(port);
