@@ -1,0 +1,22 @@
+{
+  "name": "birds-app",
+  "version": "1.0.0",
+  "description": "my birdsApp site built with express js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/nital-patel/birds-app.git"
+  },
+  "author": "Nital patel",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0"
+  }
+}
